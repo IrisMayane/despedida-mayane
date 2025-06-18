@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Despedida da Mayane</title>
+
   <style>
     body {
       margin: 0;
@@ -13,7 +14,15 @@
       color: #333;
     }
 
+    h1.titulo {
+      margin-top: 40px;
+      font-size: 2.5em;
+      color: #a6006a;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
     .slide {
+      position: relative;
       max-width: 1000px;
       margin: 40px auto;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -27,29 +36,101 @@
       display: block;
     }
 
+    .botao-mensagem {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      background-color: #ff7eb9;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .botao-mensagem:hover {
+      background-color: #ff409c;
+      transform: scale(1.05);
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     footer {
       margin: 60px 20px;
       font-size: 0.9em;
       color: #666;
     }
+    .botao-mensagem {
+  position: absolute;
+  bottom: 46%; /* <-- Subiu! */
+  right: 80px;
+  background: #ff7eb9;
+  color: rgb(41, 23, 23);
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.botao-mensagem:hover {
+  background: #ff409c;
+  transform: scale(1.05);
+}
+
+
+.botao-mensagem:hover {
+  background: #ff409c;
+  transform: scale(1.05);
+}
+
+
   </style>
 </head>
 <body>
-  <div class="slide">
-    <img src="1.png" alt="Slide 1" />
+
+  <!-- Título da página -->
+  <h1 class="titulo">Valeu galerinha💖</h1>
+
+  <!-- Slides -->
+  <div class="slide fade-in">
+    <img src="images/1.png" alt="Slide 1" />
   </div>
-  <div class="slide">
-    <img src="2.png" alt="Slide 2" />
+  <div class="slide fade-in">
+    <img src="images/2.png" alt="Slide 2" />
   </div>
-  <div class="slide">
-    <img src="3.png" alt="Slide 3" />
+  <div class="slide fade-in">
+    <img src="images/3.png" alt="Slide 3" />
   </div>
-  <div class="slide">
-    <img src="4.png" alt="Slide 4" />
+  <div class="slide fade-in">
+    <img src="images/4.png" alt="Slide 4" />
+    <!-- Botão da caixinha -->
+    <a class="botao-mensagem" href="https://forms.gle/seu-link-aqui" target="_blank">
+      ✍️ Deixe seu recado!
+      
+    </a>
   </div>
 
+  <!-- Rodapé -->
   <footer>
-    Com carinho, Mayane 💖 — 2025
+    Com carinho, Mayane 💖 — 2025<br/>
+    Obrigada por fazerem parte da minha jornada! 🌟
   </footer>
 </body>
 </html>
